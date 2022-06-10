@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Blaka&family=Poppins:ital,wght@0,400;0,700;1,200;1,300&display=swap');
+
+* { 
+padding: 0px;
+margin: 0px;
+box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    font-family: 'Poppins', 'Times New Roman', Times, serif  ;
+    scroll-behavior: smooth;
+    }
+    a {
+        text-decoration: none;
+
+    }
+    .container {
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+/* apresentação */
+
+    #apresentação {
+        background-image: url(./capa\ 3.png);
+        background-size: cover;
+        background-position: top center;
+        position: relative;  
+        z-index: 1;      
+    }
+    #apresentação h1 {
+        display: block;
+        width: fit-content;
+        font-size: 5rem;
+        position: relative;
+        color: transparent;
+        animation: text_reveal .5s ease forwards;
+        animation-delay: 1.5s;
+    }
+    #apresentação h1:nth-child(1){
+        animation-delay: 1.1s;
+    }
+    #apresentação h1:nth-child(2){
+        animation-delay: 2.1s;
+    }
+    #apresentação h1:nth-child(3){
+        animation-delay: 3.1s;
+    }
+    #apresentação h1:nth-child(4){
+        animation-delay: 4.1s;
+    }
+
+    #apresentação .cta {
+        display: inline-block;
+        padding: 10px 30px;
+        color: yellow;
+        font-size: 8rem;
+        background-color: transparent;
+        border: 3px solid gold;
+        text-transform: uppercase;
+        letter-spacing: .1ren;
+        margin-top: 20px;
+        transition: .5s ease;
+        transition-property: background-color, color;
+    }
+    #apresentação .cta:hover {
+        color: white;
+        font-weight: 600;
+        background-color: gold;
+    }
+    #apresentação h1 span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 0;   
+        animation: tex_reveal_box 1s ease;
+        animation-delay: .5s;
+        background-color: gold;
+    } 
+    #apresentação h1:nth-child(1) span{
+        animation-delay: .5s;
+    }
+    #apresentação h1:nth-child(2) span{
+        animation-delay: 1.5s;
+    }
+    #apresentação h1:nth-child(3) span{
+        animation-delay: 2.5s;
+    }
+    #apresentação h1:nth-child(4) span{
+        animation-delay: 3.5s;
+    }
+    #apresentação::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        opacity: 0.5;
+        z-index: -1;
+    }
+
+    /* Seção desenvolvimento */ 
+
+    #portifolio .portifolio {
+
+        flex-direction: column;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 100px 0;        
+    }
+    #portifolio .portifolio-header h1 {
+        margin-bottom: 50px;        
+    }
+    #portifolio .todos os projetos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+    
+    #portifolio .itens de projetos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 80%;
+        margin: 20px;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    #portifolio .project-info {
+        padding: 30px;
+        flex-basis: 50%;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;    
+
+    }
+
+    
+
+
+   
+    /* animação */
+
+    @keyframes text_reveal {
+        100% {
+            color: white;
+        }
+    }
+    @keyframes tex_reveal_box {
+        50%{
+            width: 100%;
+            left: 0;            
+        }
+        100%{
+            width: 0;
+            left: 100%;
+        }
+    }
+
+
+
+    
+
+
+
+
+
+
+        
+    
+       
+
